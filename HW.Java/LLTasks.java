@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 class LLTasks {
-	public static LinkedList<Object> revert(LinkedList<Object> ll) {
+	public LinkedList<Object> revert(LinkedList<Object> ll) {
 		LinkedList<Object> newLl = new LinkedList<Object>();
 
 		for (Object item : ll) {
