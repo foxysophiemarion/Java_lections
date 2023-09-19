@@ -9,23 +9,23 @@ public class phonebook {
 	public static void main(String[] args) {
 		HashMap<String, List<String>> phoneBook = new HashMap<>();
 
-		addContact(phoneBook, "Петр", "123456789");
-		addContact(phoneBook, "Ульяна", "777777777");
-		addContact(phoneBook, "Толя", "555555555");
-		addContact(phoneBook, "Иван", "111111111");
-		addContact(phoneBook, "Николай", "999999999");
-		addContact(phoneBook, "Харитон", "333333333");
-		addContact(phoneBook, "Ульяна", "777777777");
-		addContact(phoneBook, "Йохан", "888888888");
-		addContact(phoneBook, "Леонид", "975318642");
-		addContact(phoneBook, "Олег", "444444444");
-		addContact(phoneBook, "Иван", "246813579");
-		addContact(phoneBook, "Ульяна", "755232311");
-		addContact(phoneBook, "Борис", "73501505");
-		addContact(phoneBook, "Иван", "4071505");
-		addContact(phoneBook, "Йохан", "214365879");
-		addContact(phoneBook, "Центурион", "918273645");
-		addContact(phoneBook, "Алексей", "653887543");
+		addContact(phoneBook, "Сян Лин", "123456789");
+		addContact(phoneBook, "Райдэн", "777777777");
+		addContact(phoneBook, "Тигнари", "555555555");
+		addContact(phoneBook, "Син Цю", "111111111");
+		addContact(phoneBook, "Нахида", "999999999");
+		addContact(phoneBook, "Хэйдзо", "333333333");
+		addContact(phoneBook, "Райдэн", "777777777");
+		addContact(phoneBook, "Яэ Мико", "888888888");
+		addContact(phoneBook, "Ёемия", "975318642");
+		addContact(phoneBook, "Тигнари", "444444444");
+		addContact(phoneBook, "Син Цю", "246813579");
+		addContact(phoneBook, "Райдэн", "755232311");
+		addContact(phoneBook, "Е Лань", "73501505");
+		addContact(phoneBook, "Син Цю", "4071505");
+		addContact(phoneBook, "Кадзуха", "214365879");
+		addContact(phoneBook, "Гань Юй", "918273645");
+		addContact(phoneBook, "Яэ Мико", "653887543");
 
 		// Сортировка по убыванию числа телефонов
 		List<Map.Entry<String, List<String>>> sortedEntries = new ArrayList<>(phoneBook.entrySet());
