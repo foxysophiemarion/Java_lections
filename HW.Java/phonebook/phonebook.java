@@ -10,7 +10,7 @@ public class phonebook {
 		HashMap<String, List<String>> phoneBook = new HashMap<>();
 
 		addContact(phoneBook, "Петр", "123456789");
-		addContact(phoneBook, "Ульяна", "987654321");
+		addContact(phoneBook, "Ульяна", "777777777");
 		addContact(phoneBook, "Толя", "555555555");
 		addContact(phoneBook, "Иван", "111111111");
 		addContact(phoneBook, "Николай", "999999999");
@@ -37,14 +37,17 @@ public class phonebook {
 		}
 	}
 
-	// Метод добавления записи в телефонную книгу
 	public static void addContact(HashMap<String, List<String>> phoneBook, String name, String phoneNumber) {
-		// Если имя уже есть в телефонной книге, добавляем номер телефона к
-		// существующему
+		// Если имя уже присутствует в телефонной книге
 		if (phoneBook.containsKey(name)) {
-			phoneBook.get(name).add(phoneNumber);
+			List<String> phoneNumbers = phoneBook.get(name);
+			// Проверяем, есть ли уже такой номер телефона в списке
+			if (!phoneNumbers.contains(phoneNumber)) {
+				// Если номера нет, добавляем его
+				phoneNumbers.add(phoneNumber);
+			}
 		} else {
-			// Иначе создаем новую запись в телефонной книге
+			// Если имя не найдено, создаем новую запись в телефонной книге
 			List<String> phoneNumbers = new ArrayList<>();
 			phoneNumbers.add(phoneNumber);
 			phoneBook.put(name, phoneNumbers);
